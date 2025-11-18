@@ -1,0 +1,20 @@
+#Nombre del flujo
+name: CI
+#El evento que lo activa
+on:
+  push:
+    branches: [main]
+#Los trabajos que se ejecutaran
+jobs:
+#Nombre del trabajo
+build:
+  #Sistema operativo donde se ejecutará
+  runs_on: ubuntu
+
+  #Pasos a seguir
+  steps:
+  #Paso para obtener el código del repositorio
+  - uses: actions/checkout@v4
+  #Paso para ejecutar script 
+  - name: Script_saludo
+    run: ~/src/hola.sh
