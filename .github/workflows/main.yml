@@ -1,14 +1,14 @@
-#Nombre del flujo
-name: CI
-#El evento que lo activa
-on:
+ #Nombre del flujo
+ name: CI
+ #El evento que lo activa
+ on:
   push:
     branches: [main]
 #Los trabajos que se ejecutaran
   jobs:
 
 #Nombre del trabajo
-  build:
+  Saludo_con_workflow:
     #Sistema operativo donde se ejecutará
   runs_on: ubuntu
 
